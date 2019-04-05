@@ -1,0 +1,37 @@
+canvas {
+  background-color: #c8c8c8;
+  width: 100%;
+  height: auto;
+}
+
+.outline {
+    fill: none;
+    stroke: #888888;
+    stroke-width: 1px;
+}
+
+#tooltip {
+    font-size: 10pt;
+    font-weight: 900;
+
+    white-space: pre-line;
+
+    fill: #000000;
+    stroke: #ffffff;
+    stroke-width: 0.25px;
+}
+
+.node {
+    stroke: #ffffff;
+}
+
+.link {
+    fill: none;
+    stroke-width: 2px;
+    stroke: #888888;
+}
+
+.highlight {
+    stroke: red;
+    stroke-opacity: 1.0;
+}

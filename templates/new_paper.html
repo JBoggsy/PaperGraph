@@ -1,0 +1,38 @@
+{% extends "head_foot.html" %}
+
+{% block header %}
+{% endblock %}
+
+{% block title %} Add New Paper {% endblock %}
+
+{% block body %}
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Add New Paper</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form method="post" action="/new_paper">
+                <div class="form-group">
+                    <label for="titleInput">Title</label>
+                    <input type="text" class="form-control" id="titleInput" aria-describedby="titleHelp" placeholder="Paper Title" name="title">
+                    <small id="titleHelp" class="form-text text-muted">Enter the full title of the paper.</small>
+                </div>
+                <div class="form-group">
+                    <label for="authorsInput">Authors</label>
+                    <input type="text" class="form-control" id="authorsInput" aria-describedby="authorsHelp" placeholder="Authors" name="auths">
+                    <small id="authorsHelp" class="form-text text-muted">Authors names should be comma-separated in First Middle Last order.</small>
+                </div>
+                <div class="form-group">
+                    <label for="yearInput">Year</label>
+                    <input type="number" class="form-control" id="yearInput" aria-describedby="yearHelp" placeholder="Year" name="year">
+                    <small id="yearHelp" class="form-text text-muted">Year should be in yyyy format.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock %}

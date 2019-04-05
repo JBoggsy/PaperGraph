@@ -1,0 +1,11 @@
+{% extends "head_foot.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+<h1>Please login:</h1>
+<form action="/" method="post">
+    <input type="password" class="form-control mb-2 mr-sm-2" id="pwd" name="pwd">
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
+{% endblock %}
